@@ -1,0 +1,135 @@
+{
+  "mes": "Março",
+  "ano": "2026",
+  "responsavel": "Fabiana Roballo",
+
+  "admitidos": [
+    { "nome": "Julia Alves Corrêa", "cargo": "Analista de Operações", "foto": "https://i.pravatar.cc/150?img=1" },
+    { "nome": "Amanda Santos", "cargo": "Analista de Projetos", "foto": "https://i.pravatar.cc/150?img=2" },
+    { "nome": "Yasmin Vieira", "cargo": "Assistente de Projetos", "foto": "https://i.pravatar.cc/150?img=3" },
+    { "nome": "Ayumi Tamashiro", "cargo": "Estagiária de Qualidade", "foto": "https://i.pravatar.cc/150?img=4" },
+    { "nome": "Camila Silvestre", "cargo": "Estagiária de Qualidade", "foto": "https://i.pravatar.cc/150?img=5" }
+  ],
+
+  "desligados": [
+    { "nome": "Anna Júlia Rossete", "cargo": "Analista de Projetos", "foto": "https://i.pravatar.cc/150?img=6" },
+    { "nome": "Melissa Nascimento", "cargo": "Analista de Qualidade", "foto": "https://i.pravatar.cc/150?img=7" },
+    { "nome": "Amanda Santos", "cargo": "Analista de Projetos", "foto": "https://i.pravatar.cc/150?img=8" },
+    { "nome": "João Pedro Rocha", "cargo": "Assistente de Qualidade", "foto": "https://i.pravatar.cc/150?img=9" },
+    { "nome": "Pedro Diniz", "cargo": "Estagiário de Qualidade", "foto": "https://i.pravatar.cc/150?img=10" },
+    { "nome": "Ícaro de Paula", "cargo": "Estagiário de Qualidade", "foto": "https://i.pravatar.cc/150?img=11" }
+  ],
+
+  "promovidos": [
+    { "nome": "Eduardo Gefe", "cargo": "Assistente de Qualidade Sr.", "foto": "https://i.pravatar.cc/150?img=12" },
+    { "nome": "Guilherme Oliveira", "cargo": "Assistente de Qualidade Jr.", "foto": "https://i.pravatar.cc/150?img=13" }
+  ],
+
+  "promocaoSetor": [
+    { "nome": "NOME", "cargoAtual": "CARGO ATUAL", "salarioAtual": "R$ 0,00", "salarioDesejado": "R$ 0,00", "setor": "SETOR", "foto": "https://i.pravatar.cc/150?img=14" }
+  ],
+
+  "turnover": {
+    "meta": 5,
+    "estagiarios": [
+      { "mes": "Janeiro",   "admissoes": 3, "desligamentos": 2, "colaboradores": 33 },
+      { "mes": "Fevereiro", "admissoes": 2, "desligamentos": 2, "colaboradores": 33 },
+      { "mes": "Março",     "admissoes": 0, "desligamentos": 0, "colaboradores": 33 },
+      { "mes": "Abril",     "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Maio",      "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Junho",     "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Julho",     "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Agosto",    "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Setembro",  "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Outubro",   "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Novembro",  "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Dezembro",  "admissoes": 0, "desligamentos": 0, "colaboradores": 0 }
+    ],
+    "clts": [
+      { "mes": "Janeiro",   "admissoes": 0, "desligamentos": 1, "colaboradores": 27 },
+      { "mes": "Fevereiro", "admissoes": 3, "desligamentos": 3, "colaboradores": 27 },
+      { "mes": "Março",     "admissoes": 0, "desligamentos": 0, "colaboradores": 27 },
+      { "mes": "Abril",     "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Maio",      "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Junho",     "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Julho",     "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Agosto",    "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Setembro",  "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Outubro",   "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Novembro",  "admissoes": 0, "desligamentos": 0, "colaboradores": 0 },
+      { "mes": "Dezembro",  "admissoes": 0, "desligamentos": 0, "colaboradores": 0 }
+    ]
+  },
+
+  "recrutamento": {
+    "funil": {
+      "entrevistasAgendadas": 410,
+      "entrevistasRealizadas": 167,
+      "aprovadosEntrevista": 142,
+      "testesMarcados": 116,
+      "desistenciaTeste": 36,
+      "reprovados": 23,
+      "desistenciaAjudaCusto": 1,
+      "desistenciaPosEntrevista": 23,
+      "testesRealizados": 81
+    },
+    "contratacoes": {
+      "contratados": 27,
+      "mei": 18,
+      "freela": 9,
+      "standBy": 35,
+      "desistenciaContratacao": 4
+    },
+    "porRecrutador": [
+      { "nome": "Jojo",  "agendadas": 50,  "realizadas": 23 },
+      { "nome": "Vitor", "agendadas": 173, "realizadas": 63 },
+      { "nome": "Vivi",  "agendadas": 187, "realizadas": 81 }
+    ],
+    "porPlataforma": [
+      { "plataforma": "Jobbol",          "mes": 1,   "ano": 4   },
+      { "plataforma": "Trabalha Brasil", "mes": 35,  "ano": 66  },
+      { "plataforma": "Sólides",         "mes": 138, "ano": 349 },
+      { "plataforma": "Instagram",       "mes": 22,  "ano": 91  },
+      { "plataforma": "Facebook",        "mes": 85,  "ano": 144 },
+      { "plataforma": "Infojobs",        "mes": 15,  "ano": 31  },
+      { "plataforma": "Prefeituras",     "mes": 1,   "ano": 1   },
+      { "plataforma": "Indeed",          "mes": 103, "ano": 171 },
+      { "plataforma": "Indicação",       "mes": 0,   "ano": 0   },
+      { "plataforma": "Empregos",        "mes": 0,   "ano": 0   },
+      { "plataforma": "WhatsApp",        "mes": 103, "ano": 171 }
+    ]
+  },
+
+  "sla": {
+    "total": 13,
+    "vagasMes": 37,
+    "vagasPreenchidas": 20,
+    "vagasRecrutamento": 16,
+    "porPesquisador": [
+      { "nome": "Viviane", "sla": 8 },
+      { "nome": "Vitor",   "sla": 8 },
+      { "nome": "Joanne",  "sla": 0 }
+    ],
+    "porRegiao": [
+      { "regiao": "Nordeste", "sla": 5  },
+      { "regiao": "Sudeste",  "sla": 12 },
+      { "regiao": "Sul",      "sla": 6  },
+      { "regiao": "Norte",    "sla": 0  }
+    ]
+  },
+
+  "valeRefeicao": {
+    "cenario1": {
+      "clts":        { "qtd": 28, "valorDia": 30.00, "diasMes": 22 },
+      "estagiarios": { "qtd": 38, "valorDia": 30.00, "diasMes": 22 }
+    },
+    "cenario2": {
+      "clts":        { "qtd": 28, "valorDia": 30.00, "diasMes": 22 },
+      "estagiarios": { "qtd": 38, "valorDia": 15.00, "diasMes": 22 }
+    },
+    "cenario3": {
+      "clts":        { "qtd": 28, "valorDia": 30.00, "diasMes": 22 },
+      "estagiarios": null
+    }
+  }
+}
