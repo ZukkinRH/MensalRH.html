@@ -125,9 +125,9 @@ section{min-height:100vh;padding:60px 48px;position:relative;overflow:hidden;}
 .sec-titulo span{color:var(--laranja);}
 
 .pessoas-grid{display:flex;flex-wrap:wrap;gap:20px;}
-.pessoa-card{background:#fff;border-radius:20px;padding:28px 24px;text-align:center;width:200px;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;animation:fadeUp .5s ease both;}
+.pessoa-card{background:#fff;border-radius:20px;padding:28px 24px;text-align:center;width:260px;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;animation:fadeUp .5s ease both;}
 .pessoa-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.12);}
-.pessoa-foto-wrap{width:110px;height:110px;border-radius:50%;border:3px solid var(--bege);margin:0 auto 14px;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.pessoa-foto-wrap{width:150px;height:150px;border-radius:50%;border:3px solid var(--bege);margin:0 auto 14px;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .pessoa-foto{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;}
 .pessoa-nome{font-weight:800;font-size:14px;line-height:1.3;margin-bottom:6px;}
 .pessoa-cargo{font-size:12px;color:var(--laranja);font-weight:600;}
@@ -642,7 +642,7 @@ function popular(d){
 function renderPessoas(id,lista,cls){
   const el=document.getElementById(id);
   if(!lista||!lista.length){el.innerHTML='<p style="color:#999;font-style:italic">Nenhum registro neste mês.</p>';return;}
-  el.innerHTML=lista.map((p,i)=>`<div class="pessoa-card ${cls}" style="animation-delay:${i*.07}s"><div class="pessoa-foto-wrap"><img class="pessoa-foto" src="${p.foto}" alt="${p.nome}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(p.nome)}&background=E8873A&color=fff&size=110'"></div><p class="pessoa-nome">${p.nome}</p><p class="pessoa-cargo">${p.cargo}</p>${p.tipo?`<p class="pessoa-tipo" style="font-size:10px;font-weight:800;margin-top:4px;padding:2px 8px;border-radius:10px;display:inline-block;${p.tipo==='Voluntário'?'background:#E8F5E9;color:#2E7D32':'background:#FFEBEE;color:#C62828'}">${p.tipo}</p>`:''}</div>`).join('');
+  el.innerHTML=lista.map((p,i)=>`<div class="pessoa-card ${cls}" style="animation-delay:${i*.07}s"><div class="pessoa-foto-wrap"><img class="pessoa-foto" src="${p.foto}" alt="${p.nome}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(p.nome)}&background=E8873A&color=fff&size=150'"></div><p class="pessoa-nome">${p.nome}</p><p class="pessoa-cargo">${p.cargo}</p>${p.tipo?`<p class="pessoa-tipo" style="font-size:10px;font-weight:800;margin-top:4px;padding:2px 8px;border-radius:10px;display:inline-block;${p.tipo==='Voluntário'?'background:#E8F5E9;color:#2E7D32':'background:#FFEBEE;color:#C62828'}">${p.tipo}</p>`:''}</div>`).join('');
 }
 
 function calcTV(r){return r.colaboradores?((r.admissoes+r.desligamentos)/(2*r.colaboradores)*100):0;}
