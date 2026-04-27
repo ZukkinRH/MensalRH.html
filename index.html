@@ -670,10 +670,11 @@ function renderTurnover(tv,d){
 function fmt(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});}
 function vrCard(titulo,vr){
   const l=[];
-  if(vr.clts){const t=vr.clts.qtd*vr.clts.valorDia*vr.clts.diasMes;l.push(`<div class="vr-row"><span>CLTs (${vr.clts.qtd})</span><span>${fmt(vr.clts.valorDia)}/dia × ${vr.clts.diasMes}d = ${fmt(t)}</span></div>`);}
-  if(vr.estagiarios){const t=vr.estagiarios.qtd*vr.estagiarios.valorDia*vr.estagiarios.diasMes;l.push(`<div class="vr-row"><span>Estag. (${vr.estagiarios.qtd})</span><span>${fmt(vr.estagiarios.valorDia)}/dia × ${vr.estagiarios.diasMes}d = ${fmt(t)}</span></div>`);}
-  const tc=vr.clts?vr.clts.qtd*vr.clts.valorDia*vr.clts.diasMes:0;
-  const te=vr.estagiarios?vr.estagiarios.qtd*vr.estagiarios.valorDia*vr.estagiarios.diasMes:0;
+  const calc=(g)=>g.valorDia*5*4*g.qtd;
+  if(vr.clts){const t=calc(vr.clts);l.push(`<div class="vr-row"><span>CLTs (${vr.clts.qtd})</span><span>${fmt(vr.clts.valorDia)}/dia × 5d/sem × 4sem × ${vr.clts.qtd} = ${fmt(t)}</span></div>`);}
+  if(vr.estagiarios){const t=calc(vr.estagiarios);l.push(`<div class="vr-row"><span>Estag. (${vr.estagiarios.qtd})</span><span>${fmt(vr.estagiarios.valorDia)}/dia × 5d/sem × 4sem × ${vr.estagiarios.qtd} = ${fmt(t)}</span></div>`);}
+  const tc=vr.clts?calc(vr.clts):0;
+  const te=vr.estagiarios?calc(vr.estagiarios):0;
   return`<div class="vr-card"><div class="vr-header">${titulo}</div>${l.join('')}<div class="vr-total">Total: ${fmt(tc+te)}</div></div>`;
 }
 function renderVR(vr){document.getElementById('vr-grid').innerHTML=vrCard('Cenário 1',vr.cenario1)+vrCard('Cenário 2',vr.cenario2)+vrCard('Cenário 3',vr.cenario3);}
