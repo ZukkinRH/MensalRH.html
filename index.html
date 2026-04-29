@@ -438,8 +438,8 @@ const DADOS = {
       ]
     },
     "valeRefeicao":{
-      "cenario1":{"clts":{"qtd":28,"valorDia":30,"diasMes":30},"estagiarios":{"qtd":37,"valorDia":30,"diasMes":30}},
-      "cenario2":{"clts":{"qtd":28,"valorDia":30,"diasMes":30},"estagiarios":{"qtd":37,"valorDia":15,"diasMes":30}},
+      "cenario1":null,
+      "cenario2":null,
       "cenario3":{"clts":{"qtd":27,"valorDia":30,"diasMes":30},"estagiarios":null}
     },
     "consideracoes": [
@@ -680,7 +680,7 @@ function vrCard(titulo,vr){
   const te=vr.estagiarios?calc(vr.estagiarios):0;
   return`<div class="vr-card"><div class="vr-header">${titulo}</div>${l.join('')}<div class="vr-total">Total: ${fmt(tc+te)}</div></div>`;
 }
-function renderVR(vr){document.getElementById('vr-grid').innerHTML=vrCard('Cenário 1',vr.cenario1)+vrCard('Cenário 2',vr.cenario2)+vrCard('Cenário 3',vr.cenario3);}
+function renderVR(vr){const cards=[];if(vr.cenario1)cards.push(vrCard('Cenário 1',vr.cenario1));if(vr.cenario2)cards.push(vrCard('Cenário 2',vr.cenario2));if(vr.cenario3)cards.push(vrCard('Cenário 3',vr.cenario3));document.getElementById('vr-grid').innerHTML=cards.length?cards.join(''):'<p style="color:#999;font-style:italic">Nenhum cenário neste mês.</p>';}
 
 function renderPromo(lista){
   const el=document.getElementById('promo-setor-grid');
